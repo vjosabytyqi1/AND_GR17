@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="pieces">
+        <item>Bjeshkt e Nemuna</item>
+        <item>Muzeu</item>
+        <item>Prizereni</item>
+        <item>Ujvara e Mirushes</item>
+        <item>Shpella e Gadimes</item>
+        <item>Gryka e Rugoves</item>
+    </string-array>
+
+    <string-array name="descriptions">
+
+        <item>Ktu kemi me e qit do tekst...</item>
+        <item>Ktu kemi me e qit do tekst...</item>
+        <item>Ktu kemi me e qit do tekst...</item>
+        <item>Ktu kemi me e qit do tekst...</item>
+        <item>Ktu kemi me e qit do tekst...</item>
+        <item>Ktu kemi me e qit do tekst...</item>
+
+
+    </string-array>
+    <string-array name="fotot">
+    <item>image</item>
+    <item>foto</item>
+    <item>image</item>
+    <item>foto</item>
+    <item>image</item>
+    <item>foto</item>
+</string-array>
+
+
+
+</resources>
