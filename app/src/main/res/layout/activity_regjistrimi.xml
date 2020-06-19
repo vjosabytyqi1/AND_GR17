@@ -36,12 +36,15 @@
             android:inputType="textPassword"
             android:textColor="#FFFFFF" />
 
-        <Button
+     <Button
             android:id="@+id/btnregister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:text="Regjistrohu" />
+            android:text="Regjistrohu"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+            android:textColor="#FFFFFF"/>
 
         <TextView
             android:id="@+id/textViewRegjister"

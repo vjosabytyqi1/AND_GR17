@@ -93,3 +93,49 @@ public class ProfilActivity extends AppCompatActivity implements Aktivitet_frag.
                     String link=dataSnapshot.getValue(String.class);
                     Picasso.get().load(link).into(imageView);
                 }
+
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
+
+
+
+
+        //the phone is in portrait mode
+        if (findViewById(R.id.layout_portrait) != null)
+        {
+            FragmentManager manager = this.getSupportFragmentManager();
+
+            manager.beginTransaction()
+                    .show(manager.findFragmentById(R.id.detailFrag))
+                    .hide(manager.findFragmentById(R.id.listFrag))
+                    .addToBackStack(null)
+                    .commit();
+        }
+
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.menu1,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.itemLogout:
+                FirebaseAuth.getInstance().signOut();
+                finish();
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+        }
+                return super.onOptionsItemSelected(item);
+
+    }
+}
