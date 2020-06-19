@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="horizontal"
     android:layout_height="match_parent"
-    tools:context=".ProfilActivity"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    >
-    <LinearLayout
-        android:layout_width="match_parent"
+    android:id="@+id/layout_portrait"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/listFrag"
+        android:name="com.example.projekti.Aktivitet_frag"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_aktivitet_frag" />
 
-
-
-    </LinearLayout>
-
-</RelativeLayout>
+    <fragment
+        android:id="@+id/detailFrag"
+        android:name="com.example.projekti.Detajet_frag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        tools:layout="@layout/fragment_detajet_frag" />
+</LinearLayout>
