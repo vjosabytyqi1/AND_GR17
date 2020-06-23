@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android= "http://schemas.android.com/apk/res/android"
+    xmlns:tools= "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/vendet"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:text="Vendet per tu vizituar"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/ushqim"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="Ushqime per te provuar"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/valutat"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:text="Kembimi i valutave"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/kultura"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:text="Kultura"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/harta"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:text="Harta"
+        android:textAlignment="center" />
+
+
+</LinearLayout>
