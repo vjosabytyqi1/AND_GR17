@@ -80,12 +80,12 @@ public class Regjistrimi extends AppCompatActivity implements View.OnClickListen
     }
     @Override
     public void onClick(View v) {
-        if (v==btnRegister){
+        if (v == btnRegister) {
             RegisterUser();
 
         }
-        if (v==textViewRegjister){
-            Intent intent=new Intent(Regjistrimi.this,LoginActivity.class);
+        if (v == textViewRegjister) {
+            Intent intent = new Intent(Regjistrimi.this, aktivitetetKryesore.class);
             startActivity(intent);
         }
     }
