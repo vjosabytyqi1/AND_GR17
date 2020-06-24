@@ -15,7 +15,7 @@ import com.example.projekti.Activities.UshqimetAktivitet;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class aktivitetetKryesore extends AppCompatActivity  {
-    TextView vendet,ushqimet,kultura,harta;
+    TextView vendet,ushqimet,kultura,harta,valutat;
 
 
     @Override
@@ -42,6 +42,11 @@ public class aktivitetetKryesore extends AppCompatActivity  {
              Toast.makeText(this,"Ko me u vendos permbajtja",Toast.LENGTH_LONG).show();
         });
 
+        valutat=findViewById(R.id.valutat);
+        valutat.setOnClickListener((v)->{
+            Intent intent=new Intent(this, AddCurrency.class);
+            startActivity(intent);
+        });
 
 
 
