@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/dark"
+    android:background="@color/si"
+
+    >
+
+    <TextView
+        android:id="@+id/txtUploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/vendet1_0"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/txtUploadImage"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/imagepreview" />
+
+    <ProgressBar
+        android:id="@+id/uploadProgress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgPreview" />
+
+    <Button
+        android:id="@+id/chooseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uploadProgress"
+        android:layout_marginTop="40px"
+        android:text="@string/fotoGaleri"
+        android:background="@color/mento"
+
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/cameraBtn"
+        android:layout_width="match_parent"
+        android:text="@string/kamera"
+        android:background="@color/mento"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseImage"
+        android:drawableLeft="@drawable/icon_camera"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/imgDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cameraBtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/enter_image_description_here"
+
+        />
+
+    <Button
+        android:id="@+id/btnUploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:background="@color/mento"
+
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/icon_upload"
+        android:text="@string/shto_foto"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Shikoni Fotot"
+        android:id="@+id/viewGallery"
+        android:textSize="20sp"/>
+
+
+
+
+</RelativeLayout>
