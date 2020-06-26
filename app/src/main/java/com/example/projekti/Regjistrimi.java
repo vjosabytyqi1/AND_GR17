@@ -71,7 +71,9 @@ public class Regjistrimi extends AppCompatActivity implements View.OnClickListen
                 }
                 else {
                     Toast.makeText(Regjistrimi.this,"Nuk u regjistrua!Provoni perseri!",Toast.LENGTH_SHORT).show();
-                }
+		    startActivity(new Intent(Regjistrimi.this,aktivitetetKryesore.class));
+                
+}
             }
         });
 

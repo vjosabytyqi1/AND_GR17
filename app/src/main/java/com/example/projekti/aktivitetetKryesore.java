@@ -39,7 +39,8 @@ public class aktivitetetKryesore extends AppCompatActivity  {
 
         kultura=findViewById(R.id.kultura);
         kultura.setOnClickListener((v)->{
-             Toast.makeText(this,"Ko me u vendos permbajtja",Toast.LENGTH_LONG).show();
+        startActivity(new Intent(aktivitetetKryesore.this, AktivitetiFoto.class));
+
         });
 
         valutat=findViewById(R.id.valutat);
