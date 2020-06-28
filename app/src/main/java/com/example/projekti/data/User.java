@@ -1,4 +1,4 @@
-package spartons.com.googlemapcustommarkercluster.data;
+package com.example.projekti.data;
 
 
 import androidx.annotation.NonNull;

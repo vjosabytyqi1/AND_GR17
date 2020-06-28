@@ -1,10 +1,13 @@
-package spartons.com.googlemapcustommarkercluster;
+package com.example.projekti;
 
 import android.os.Bundle;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.projekti.clusterRenderer.MarkerClusterRenderer;
+import com.example.projekti.data.User;
+import com.example.projekti.util.GoogleMapHelper;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -13,11 +16,10 @@ import com.google.maps.android.clustering.ClusterManager;
 import java.util.Arrays;
 import java.util.List;
 
-import spartons.com.googlemapcustommarkercluster.clusterRenderer.MarkerClusterRenderer;
-import spartons.com.googlemapcustommarkercluster.data.User;
-import spartons.com.googlemapcustommarkercluster.util.GoogleMapHelper;
 
-public class MainActivity extends AppCompatActivity {
+
+
+public class MainActivity1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
         );
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main1);
         SupportMapFragment supportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapFragment);
         assert supportMapFragment != null;
         supportMapFragment.getMapAsync(googleMap -> {

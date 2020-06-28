@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.projekti.Activities.AktivitetiFoto;
 import com.example.projekti.Activities.UshqimetAktivitet;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -48,6 +49,11 @@ public class aktivitetetKryesore extends AppCompatActivity  {
             Intent intent=new Intent(this, AddCurrency.class);
             startActivity(intent);
         });
+        harta=findViewById(R.id.harta);
+        harta.setOnClickListener((view -> {
+            startActivity(new Intent(aktivitetetKryesore.this, MainActivity1.class));
+
+        }));
 
 
 

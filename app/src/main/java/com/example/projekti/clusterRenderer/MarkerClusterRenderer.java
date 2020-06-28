@@ -1,4 +1,4 @@
-package spartons.com.googlemapcustommarkercluster.clusterRenderer;
+package com.example.projekti.clusterRenderer;
 
 
 import android.annotation.SuppressLint;
@@ -13,6 +13,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 
+import com.example.projekti.R;
+import com.example.projekti.data.User;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
@@ -25,8 +27,7 @@ import com.google.maps.android.clustering.ClusterManager;
 import com.google.maps.android.clustering.view.DefaultClusterRenderer;
 import com.google.maps.android.ui.IconGenerator;
 
-import spartons.com.googlemapcustommarkercluster.R;
-import spartons.com.googlemapcustommarkercluster.data.User;
+
 
 @SuppressLint("InflateParams")
 public class MarkerClusterRenderer extends DefaultClusterRenderer<User> implements ClusterManager.OnClusterClickListener<User>, GoogleMap.OnInfoWindowClickListener {

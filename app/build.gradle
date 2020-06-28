@@ -51,6 +51,12 @@ dependencies {
     // bounce scroll like iOS
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+
+    // Google play services dependencies
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
 
 }
 
