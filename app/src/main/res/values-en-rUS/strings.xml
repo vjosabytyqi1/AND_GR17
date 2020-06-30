@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Visit Kosovo</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="visit_kosova">Visit Kosovo</string>
+    <string name="vendet">Places to visit</string>
+    <string name="ushqimet_provu">Foods to try</string>
+    <string name="kembimi">Currency exchange</string>
+    <string name="galeria">Photo Gallery</string>
+    <string name="harta">Map</string>
+
+    <string name="title_home">All foods</string>
+    <string name="title_dashboard">Favorites</string>
+
+    <string name="fotoGaleri">Choose photos from the gallery</string>
+    <string name="kamera">Camera</string>
+    <string name="shto_foto">Upload</string>
+    <string name="enter_image_description_here" >Enter the location of the photo</string>
+    <string name="vendet1_0">Your photo</string>
+    <string name="email_shkru">Please write your email</string>
+    <string name="regjistrohu">Register</string>
+    <string name="login">Login</string>
+    <string name="zgjedh_gjuhen">Language</string>
+    <string name="register">Register</string>
+    <string name="regjistrohu_text">Already registred? Login here!</string>
+    <string name="shikoni_fotot">Show all photos</string>
+    <string name="write_email">Please write your email here.</string>
+    <string name="kyquni">Login</string>
+    <string name="shkruani_passwordin">Write your password here!</string>
+    <string name="vendi">Place</string>
+    <string name="web">Web page</string>
+</resources>
