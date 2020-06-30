@@ -18,7 +18,7 @@
         android:layout_height="120dp"
         android:layout_gravity="bottom"
         android:background="@drawable/mirusha"
-        android:text="Vendet per tu vizituar"
+        android:text="@string/vendet"
         android:textColor="@color/colorPrimary"
 
 
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="@drawable/flija"
-        android:text="Ushqime per te provuar"
+        android:text="@string/ushqimet_provu"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="30dp" />
@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="@drawable/valuta"
-        android:text="Kembimi i valutave"
+        android:text="@string/kembimi"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="30dp" />
@@ -49,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="@drawable/bjeshketenemuna"
-        android:text="Galeria e Fotove"
+        android:text="@string/galeria"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="30dp" />
@@ -59,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="@drawable/map"
-        android:text="Harta"
+        android:text="@string/harta"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="30dp" />

@@ -24,7 +24,7 @@
             android:layout_margin="15dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Ju lutem shkruani emailin tuaj."
+            android:hint="@string/write_email"
             android:inputType="textEmailAddress"
             android:textColor="#F4EDED" />
 
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:text="Regjistrohu"
+            android:text="@string/regjistrohu"
             android:textAllCaps="false"
             android:background="@drawable/custom_button"
             android:textColor="#FFFFFF"/>
@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:text="Jeni Regjistruar? Kyquni ketu"
+            android:text="@string/regjistrohu_text"
             android:textAlignment="center" />
     </LinearLayout>
 </RelativeLayout>

@@ -1,10 +1,15 @@
 package com.example.projekti;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,6 +20,8 @@ import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
     ConstraintLayout linearLayout;
     AnimationDrawable animationDrawable;
@@ -23,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        loadLocale();
 
 
 
@@ -53,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.item1:
-                Toast.makeText(this,"Item 1 u selektu",Toast.LENGTH_SHORT).show();
+                shfaqGjuhet();
                 return true;
             case R.id.item2:
                 Intent intent=new Intent(this,LoginActivity.class);
@@ -66,5 +74,57 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    private void shfaqGjuhet(){
+
+        final String[] gjuhet={"Shqip","English"};
+        AlertDialog.Builder builder=new AlertDialog.Builder(MainActivity.this);
+
+        builder.setTitle("Zgjedheni gjuhen");
+        builder.setSingleChoiceItems(gjuhet, -1, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                if (i==0){
+                    setLocal("sq");
+                    recreate();
+                }
+                if (i==1) {
+                    setLocal("en");
+                    recreate();
+                }
+                dialogInterface.dismiss();
+
+            }
+
+
+        });
+        AlertDialog dialog=builder.create();
+        dialog.show();
+    }
+    private void setLocal(String lang) {
+
+
+        Locale locale=new Locale(lang);
+        Locale.setDefault(locale);
+        Configuration configuration=new Configuration();
+        configuration.locale=locale;
+
+        getBaseContext().getResources().updateConfiguration(configuration,getBaseContext().getResources().getDisplayMetrics());
+
+        SharedPreferences.Editor editor=getSharedPreferences("Settings",MODE_PRIVATE).edit();
+
+        editor.putString("Gjuha",lang);
+        editor.apply();
+
+    }
+
+
+    public void loadLocale(){
+
+        SharedPreferences preferences=getSharedPreferences("Settings", Activity.MODE_PRIVATE);
+        String language=preferences.getString("Gjuha","");
+
+        setLocal(language);
+
     }
 }

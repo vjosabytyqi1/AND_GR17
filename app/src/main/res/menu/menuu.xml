@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
         <item
             android:id="@+id/item1"
-            android:title="Item1"
+            android:title="@string/zgjedh_gjuhen"
             app:showAsAction="always"/>
         <item
             android:id="@+id/item2"
-            android:title="Login"
+            android:title="@string/login"
             app:showAsAction="always"/>
         <item
             android:id="@+id/item3"
-            android:title="Register"
+            android:title="@string/register"
             app:showAsAction="always"/>
+
 </menu>

@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:background="#403E3E"
-            android:text="Kyquni"
+            android:text="@string/kyquni"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
             android:textSize="30sp" />
@@ -35,7 +35,7 @@
             android:layout_weight="1"
             android:background="#474242"
             android:ems="10"
-            android:hint="Ju lutem shkruani emailin tuaj."
+            android:hint="@string/email_shkru"
             android:inputType="textEmailAddress"
             android:textColor="#F4EDED"
             android:textColorHint="#F6F2F2" />
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:background="#3A3636"
-            android:text="Kyquni"
+            android:text="@string/kyquni"
             android:textColor="#EFEDED" />
 
 
