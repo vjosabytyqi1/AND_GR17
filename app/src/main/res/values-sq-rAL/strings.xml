@@ -1,31 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">projekti</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">Visit Kosova</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="visit_kosova">Visit Kosova</string>
+    <string name="vendet">Vendet per tu vizituar</string>
+    <string name="ushqimet_provu" translatable="false">Ushqime për të provuar</string>
+    <string name="kembimi">Këmbimi i valutave</string>
+    <string name="galeria">Galeria e Fotove</string>
+    <string name="harta">Harta</string>
+
+    <string name="title_home">Te gjitha</string>
+    <string name="title_dashboard">Te pelqyerat</string>
     <string name="fotoGaleri">Zgjedheni foto nga galeria</string>
     <string name="kamera">Kamera</string>
     <string name="shto_foto">Shto Foto</string>
     <string name="enter_image_description_here" >Shkruani vendin e fotos</string>
     <string name="vendet1_0">Foto nga vende te ndryshme</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
- <string name="visit_kosova">Visit Kosova</string>
-    <string name="vendet">Vendet per tu vizituar</string>
-    <string name="ushqimet_provu">Ushqime për të provuar</string>
-    <string name="kembimi">Këmbimi i valutave</string>
-    <string name="galeria">Galeria e Fotove</string>
-    <string name="harta">Harta</string>
     <string name="email_shkru">Ju lutem shkruani emailin tuaj.</string>
     <string name="regjistrohu">Regjistrohu</string>
     <string name="regjistrohu_text">Jeni Regjistruar? Kyquni ketu</string>
     <string name="shikoni_fotot">Shikoni Fotot</string>
-    <string name="login">Login</string>
+    <string name="login">Kyquni</string>
     <string name="zgjedh_gjuhen">Zgjedh Gjuhen</string>
-    <string name="register">Register</string>
+    <string name="register">Regjistrohuni</string>
     <string name="write_email">Ju lutem shkruani emailin tuaj.</string>
     <string name="kyquni">Kyquni</string>
     <string name="shkruani_passwordin">Shkruani passwordin</string>
-    <string name="web">Ueb Faqja</string>
     <string name="vendi">Vendi</string>
+    <string name="web">Ueb Faqja</string>
 
 </resources>
