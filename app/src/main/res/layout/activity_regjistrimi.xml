@@ -25,6 +25,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/write_email"
+            android:textColorHint="#edebe3"
             android:inputType="textEmailAddress"
             android:textColor="#F4EDED" />
 
@@ -33,6 +34,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
+            android:hint="@string/shkruani_passwordin"
+            android:textColorHint="#edebe3"
             android:inputType="textPassword"
             android:textColor="#FFFFFF" />
 
@@ -52,6 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:text="@string/regjistrohu_text"
+            android:textColor="#edebe3"
             android:textAlignment="center" />
     </LinearLayout>
 </RelativeLayout>

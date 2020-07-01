@@ -16,10 +16,10 @@
         android:id="@+id/vendet"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_gravity="bottom"
         android:background="@drawable/mirusha"
         android:text="@string/vendet"
         android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
 
 
         android:textSize="30dp" />

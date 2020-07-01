@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/etnologjik"
+    android:background="@drawable/mirushalog"
     tools:context=".Regjistrimi">
 
     <LinearLayout
@@ -21,7 +21,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:background="#403E3E"
             android:text="@string/kyquni"
             android:textAlignment="center"
             android:textColor="#FDFCFC"
@@ -33,28 +32,27 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:layout_weight="1"
-            android:background="#474242"
             android:ems="10"
             android:hint="@string/email_shkru"
             android:inputType="textEmailAddress"
             android:textColor="#F4EDED"
             android:textColorHint="#F6F2F2" />
-<!--rinor-->
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:background="#393131"
             android:inputType="textPassword"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:hint="@string/shkruani_passwordin"
+            android:textColorHint="#F6F2F2"/>
 
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:background="#3A3636"
+            android:background="@drawable/custom_button"
             android:text="@string/kyquni"
             android:textColor="#EFEDED" />
 

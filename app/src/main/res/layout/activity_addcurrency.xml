@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddCurrency">
+    tools:context=".AddCurrency"
+    android:background="@drawable/money"
+    >
 
 
     <TextView
@@ -14,7 +16,7 @@
         android:layout_margin="15dp"
         android:layout_weight="1"
         android:ems="10"
-        android:textColor="#3700B3" />
+        android:textColor="#02472F" />
     <EditText
         android:id="@+id/text_input"
         android:layout_width="225dp"

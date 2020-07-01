@@ -11,23 +11,15 @@
 
     <string-array name="descriptions">
 
-        <item>Ktu kemi me e qit do tekst...</item>
-        <item>Ktu kemi me e qit do tekst...</item>
-        <item>Ktu kemi me e qit do tekst...</item>
-        <item>Ktu kemi me e qit do tekst...</item>
-        <item>Ktu kemi me e qit do tekst...</item>
-        <item>Ktu kemi me e qit do tekst...</item>
+        <item>Bjeshket e Nemuna apo te njohura ndryshe edhe si Alpet Shqiptare janë vazhdimësi e Maleve Dinarite shtrihen në perëndim të Kosovës.Parku përfshin një sipërfaqe prej 62,488 hektarësh ndërsa u themelua me qëllim të mbrojtjes së ekosistemit, biodiversitetit si dhe trashëgimisë kulturore e historike të kësaj pjese të Bjeshkëve të Nemuna. </item>
+        <item>Muzeu Etnologjik është një monument i trashëgimisë kulturore në Prishtinë, Kosovë.Në vitin 2002, Muzeu Etnologjik hapi ekspozitën e tij të natyrës së përhershme në të cilën u paraqitën rrobat e lashta, mjetet, mobiljet dhe armët e vjetra.  </item>
+        <item>Prizreni është qytet në pjesën jug-perëndimore të Kosovës.Nga e kaluara historike, qyteti i Prizrenit ka trashëguar një numër të madh objektesh kulturo -historike, disa janë : Kompleksi i Shatirvanit, Kalaja, Kisha e Shën Shpëtimit, Xhamia e Safi Sinan Pashës, Hamamet e qytetit, krojet e qytetit, Ura e Gurit dhe Lidhja e Prizrenit </item>
+        <item>Ujëvara e Mirushës, ndodhet ne fshatin Llapçevë të Komunes se Malisheves.Sipas IUCN, zona i përket kategorisë ”Peizazh i mbrojtur”, kurse rrjedha e lumit Mirusha i përket kategorisë ”Monument natyror”. Në këtë park, lumi Mirusha gjatë rrjedhës së tij kalon nëpër një grykë dhe krijon 12 ujëvara dhe 16 liqene që paraqesin një fenomen të rrallë morfo‐hidrologjik. </item>
+        <item>Shpella e Gadimes gjendet në fshatin Gadime në afërsi të Lipjanit. Ajo është e gjatë 1500 metra.Gjatë secilës stinë temperatura në brendi të shpellës është konstante 13 gradë celsius. Nga madhësia e rritjes së kristaleve të rralla në një cm për 30,000 vjet kjo rrjedh se shpella është e vjetër rreth 80,000 vjet.Disa nga simbolet e formuara nga kristalet janë:Peshku, Mjekrra e Skenderbeut, Romeo dhe Zhulieta, etj.</item>
+        <item>Kanioni i Rugovës ose Gryka e Rugovës është një kanion afër Pejës, në Bjeshkët e Nemuna.Me një gjatësi prej 25 kmdhe thellësi prej 1,000 metra, Rugova konsiderohet të jetë një nga kanionët më të gjata dhe më të thella të Evropës. Lumbardhi i Pejës-Bistrica kalon përmes kanionit.</item>
 
 
     </string-array>
-    <string-array name="fotot">
-    <item>image</item>
-    <item>foto</item>
-    <item>image</item>
-    <item>foto</item>
-    <item>image</item>
-    <item>foto</item>
-</string-array>
 
 
 
