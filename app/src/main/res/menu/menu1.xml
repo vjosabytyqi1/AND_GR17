@@ -8,6 +8,10 @@
                     android:id="@+id/itemLogout"
                     app:showAsAction="never"
                     />
+    <item
+        android:id="@+id/ruaj"
+        android:title="@string/vendet_e_ruajtura"
+        app:showAsAction="never" />
 
 
 

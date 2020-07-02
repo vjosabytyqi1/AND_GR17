@@ -1,4 +1,4 @@
-package com.example.projekti;
+package com.example.projekti.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +12,8 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.projekti.Fragments.Aktivitet_frag;
+import com.example.projekti.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -134,6 +136,11 @@ public class ProfilActivity extends AppCompatActivity implements Aktivitet_frag.
                 FirebaseAuth.getInstance().signOut();
                 finish();
                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                return true;
+            case R.id.ruaj:
+                startActivity(new Intent(getApplicationContext(), Main2Activity.class));
+                return true;
+
         }
                 return super.onOptionsItemSelected(item);
 

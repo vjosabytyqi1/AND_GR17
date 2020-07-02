@@ -1,4 +1,4 @@
-package com.example.projekti;
+package com.example.projekti.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.projekti.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -68,11 +69,12 @@ public class Regjistrimi extends AppCompatActivity implements View.OnClickListen
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     Toast.makeText(Regjistrimi.this,"Regjistruar me sukses",Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(Regjistrimi.this, aktivitetetKryesore.class));
+
                 }
                 else {
                     Toast.makeText(Regjistrimi.this,"Nuk u regjistrua!Provoni perseri!",Toast.LENGTH_SHORT).show();
-		    startActivity(new Intent(Regjistrimi.this,aktivitetetKryesore.class));
-                
+
 }
             }
         });
@@ -87,7 +89,7 @@ public class Regjistrimi extends AppCompatActivity implements View.OnClickListen
 
         }
         if (v == textViewRegjister) {
-            Intent intent = new Intent(Regjistrimi.this, aktivitetetKryesore.class);
+            Intent intent = new Intent(Regjistrimi.this, LoginActivity.class);
             startActivity(intent);
         }
     }

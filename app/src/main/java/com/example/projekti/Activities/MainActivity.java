@@ -1,4 +1,4 @@
-package com.example.projekti;
+package com.example.projekti.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -16,9 +16,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.Switch;
-import android.widget.Toast;
+
+import com.example.projekti.R;
 
 import java.util.Locale;
 
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         btnKos=(Button) findViewById(R.id.btnKos);
 
         btnKos.setOnClickListener((v)->{
-            Intent intent=new Intent(MainActivity.this,Regjistrimi.class);
+            Intent intent=new Intent(MainActivity.this, Regjistrimi.class);
             startActivity(intent);
             animationDrawable.stop();
         });
@@ -64,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 shfaqGjuhet();
                 return true;
             case R.id.item2:
-                Intent intent=new Intent(this,LoginActivity.class);
+                Intent intent=new Intent(this, LoginActivity.class);
                 startActivity(intent);
                 return true;
             case R.id.item3:

@@ -6,11 +6,11 @@
     android:orientation="horizontal"
     android:layout_height="match_parent"
     android:id="@+id/layout_land"
-    tools:context=".MainActivity">
+    tools:context=".Activities.MainActivity">
 
     <fragment
         android:id="@+id/listFrag"
-        android:name="com.example.projekti.Aktivitet_frag"
+        android:name="com.example.projekti.Fragments.Aktivitet_frag"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/detailFrag"
-        android:name="com.example.projekti.Detajet_frag"
+        android:name="com.example.projekti.Fragments.Detajet_frag"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="2"

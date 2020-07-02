@@ -17,7 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.projekti.Helpers.CoffeeItem;
+import com.example.projekti.Helpers.Ushqime;
 import com.example.projekti.Helpers.FavDB;
 import com.example.projekti.R;
 import com.google.firebase.database.DataSnapshot;
@@ -30,14 +30,14 @@ import com.google.firebase.database.Transaction;
 import java.util.ArrayList;
 
 
-public class CoffeeAdapter extends RecyclerView.Adapter<CoffeeAdapter.ViewHolder> {
+public class UshqimAdapter extends RecyclerView.Adapter<UshqimAdapter.ViewHolder> {
 
-    private ArrayList<CoffeeItem> coffeeItems;
+    private ArrayList<Ushqime> ushqimes;
     private Context context;
     private FavDB favDB;
 
-    public CoffeeAdapter(ArrayList<CoffeeItem> coffeeItems, Context context) {
-        this.coffeeItems = coffeeItems;
+    public UshqimAdapter(ArrayList<Ushqime> ushqimes, Context context) {
+        this.ushqimes = ushqimes;
         this.context = context;
     }
 
@@ -61,18 +61,18 @@ public class CoffeeAdapter extends RecyclerView.Adapter<CoffeeAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        final CoffeeItem coffeeItem = coffeeItems.get(position);
+        final Ushqime ushqime = ushqimes.get(position);
 
-        readCursorData(coffeeItem, holder);
-        holder.imageView.setImageResource(coffeeItem.getImageResourse());
-        holder.titleTextView.setText(coffeeItem.getTitle());
+        readCursorData(ushqime, holder);
+        holder.imageView.setImageResource(ushqime.getImageResourse());
+        holder.titleTextView.setText(ushqime.getTitle());
     }
 
 
 
     @Override
     public int getItemCount() {
-        return coffeeItems.size();
+        return ushqimes.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -94,9 +94,9 @@ public class CoffeeAdapter extends RecyclerView.Adapter<CoffeeAdapter.ViewHolder
                 @Override
                 public void onClick(View view) {
                     int position = getAdapterPosition();
-                    CoffeeItem coffeeItem = coffeeItems.get(position);
+                    Ushqime ushqime = ushqimes.get(position);
 
-                    likeClick(coffeeItem, favBtn, likeCountTextView);
+                    likeClick(ushqime, favBtn, likeCountTextView);
                 }
             });
         }
@@ -111,13 +111,13 @@ public class CoffeeAdapter extends RecyclerView.Adapter<CoffeeAdapter.ViewHolder
         editor.apply();
     }
 
-    private void readCursorData(CoffeeItem coffeeItem, ViewHolder viewHolder) {
-        Cursor cursor = favDB.read_all_data(coffeeItem.getKey_id());
+    private void readCursorData(Ushqime ushqime, ViewHolder viewHolder) {
+        Cursor cursor = favDB.read_all_data(ushqime.getKey_id());
         SQLiteDatabase db = favDB.getReadableDatabase();
         try {
             while (cursor.moveToNext()) {
                 String item_fav_status = cursor.getString(cursor.getColumnIndex(FavDB.FAVORITE_STATUS));
-                coffeeItem.setFavStatus(item_fav_status);
+                ushqime.setFavStatus(item_fav_status);
 
                 //check fav status
                 if (item_fav_status != null && item_fav_status.equals("1")) {
@@ -135,15 +135,15 @@ public class CoffeeAdapter extends RecyclerView.Adapter<CoffeeAdapter.ViewHolder
     }
 
     // like click
-    private void likeClick (CoffeeItem coffeeItem, Button favBtn, final TextView textLike) {
+    private void likeClick (Ushqime ushqime, Button favBtn, final TextView textLike) {
        DatabaseReference refLike = FirebaseDatabase.getInstance().getReference().child("likes");
-        final DatabaseReference upvotesRefLike = refLike.child(coffeeItem.getKey_id());
+        final DatabaseReference upvotesRefLike = refLike.child(ushqime.getKey_id());
 
-        if (coffeeItem.getFavStatus().equals("0")) {
+        if (ushqime.getFavStatus().equals("0")) {
 
-            coffeeItem.setFavStatus("1");
-            favDB.insertIntoTheDatabase(coffeeItem.getTitle(), coffeeItem.getImageResourse(),
-                    coffeeItem.getKey_id(), coffeeItem.getFavStatus());
+            ushqime.setFavStatus("1");
+            favDB.insertIntoTheDatabase(ushqime.getTitle(), ushqime.getImageResourse(),
+                    ushqime.getKey_id(), ushqime.getFavStatus());
             favBtn.setBackgroundResource(R.drawable.ic_favorite_red_24dp);
             favBtn.setSelected(true);
 
@@ -178,9 +178,9 @@ public class CoffeeAdapter extends RecyclerView.Adapter<CoffeeAdapter.ViewHolder
 
 
 
-        } else if (coffeeItem.getFavStatus().equals("1")) {
-            coffeeItem.setFavStatus("0");
-            favDB.remove_fav(coffeeItem.getKey_id());
+        } else if (ushqime.getFavStatus().equals("1")) {
+            ushqime.setFavStatus("0");
+            favDB.remove_fav(ushqime.getKey_id());
             favBtn.setBackgroundResource(R.drawable.ic_favorite_shadow_24dp);
             favBtn.setSelected(false);
 

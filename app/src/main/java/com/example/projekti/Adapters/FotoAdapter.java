@@ -14,7 +14,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.projekti.Helpers.Helpers.Upload;
+import com.example.projekti.data.Upload;
 import com.example.projekti.R;
 import com.squareup.picasso.Picasso;
 

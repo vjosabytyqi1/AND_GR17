@@ -1,16 +1,16 @@
 package com.example.projekti.Helpers;
 
-public class CoffeeItem {
+public class Ushqime {
 
     private int imageResourse;
     private String title;
     private String key_id;
     private String favStatus;
 
-    public CoffeeItem() {
+    public Ushqime() {
     }
 
-    public CoffeeItem(int imageResourse, String title, String key_id, String favStatus) {
+    public Ushqime(int imageResourse, String title, String key_id, String favStatus) {
         this.imageResourse = imageResourse;
         this.title = title;
         this.key_id = key_id;

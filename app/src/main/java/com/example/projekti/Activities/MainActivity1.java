@@ -1,10 +1,11 @@
-package com.example.projekti;
+package com.example.projekti.Activities;
 
 import android.os.Bundle;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.projekti.R;
 import com.example.projekti.clusterRenderer.MarkerClusterRenderer;
 import com.example.projekti.data.User;
 import com.example.projekti.util.GoogleMapHelper;

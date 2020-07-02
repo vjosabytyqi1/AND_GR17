@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="75dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:text="@string/vendi"
+        android:textColor="@color/si"
+        android:textAlignment="center"
+        android:id="@+id/vendi"
+
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:textColor="@color/si"
+
+        android:layout_height="match_parent"
+        android:text="@string/data_f"
+        android:layout_toRightOf="@+id/vendi"
+        android:id="@+id/plani"
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:textColor="@color/si"
+
+        android:layout_height="match_parent"
+        android:text="@string/data_p"
+        android:layout_toRightOf="@+id/plani"
+        android:textAlignment="center"/>
+
+    <TextView
+
+        android:id="@+id/t_name"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:text="Mobile"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/t_data_fillim"
+        android:layout_width="130dp"
+        android:textColor="#fff"
+
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/t_name"
+        android:gravity="center"
+        android:text="5000"
+        android:textAppearance="?android:textAppearanceLarge" />
+    <TextView
+        android:layout_width="130dp"
+        android:textColor="#fff"
+
+        android:layout_height="match_parent"
+        android:id="@+id/t_data_mbarim"
+        android:layout_toRightOf="@+id/t_data_fillim"
+        android:text="500"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+
+</RelativeLayout>

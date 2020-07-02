@@ -29,4 +29,8 @@
     <string name="shkruani_passwordin">Write your password here!</string>
     <string name="vendi">Place</string>
     <string name="web">Web page</string>
+    <string name="vendet_e_ruajtura">Saved places</string>
+    <string name="data_p">Planned date</string>
+    <string name="save">Save</string>
+    <string name="data_f">Return date</string>
 </resources>

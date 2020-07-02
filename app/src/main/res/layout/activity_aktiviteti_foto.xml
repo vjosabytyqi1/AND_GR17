@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Activities.MainActivity"
     android:id="@+id/dark"
     android:background="@color/si"
 
@@ -47,7 +47,7 @@
         android:layout_below="@+id/uploadProgress"
         android:layout_marginTop="40px"
         android:text="@string/fotoGaleri"
-        android:background="@color/mento"
+        android:background="@drawable/custom_button"
 
         android:textSize="18sp" />
 
@@ -55,12 +55,14 @@
         android:id="@+id/cameraBtn"
         android:layout_width="match_parent"
         android:text="@string/kamera"
-        android:background="@color/mento"
+        android:background="@drawable/custom_button"
         android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/chooseImage"
         android:drawableLeft="@drawable/icon_camera"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+
+        />
 
     <EditText
         android:id="@+id/imgDescription"
@@ -79,14 +81,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="20dp"
-        android:background="@color/mento"
+        android:background="@drawable/custom_button"
 
         android:layout_marginBottom="10dp"
         android:drawableLeft="@drawable/icon_upload"
         android:text="@string/shto_foto"
         android:textSize="18sp" />
 
-    <TextView
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -95,7 +98,9 @@
         android:layout_marginBottom="20dp"
         android:text="Shikoni Fotot"
         android:id="@+id/viewGallery"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:background="@drawable/custom_button"/>
+
 
 
 

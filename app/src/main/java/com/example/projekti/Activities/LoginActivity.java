@@ -1,4 +1,4 @@
-package com.example.projekti;
+package com.example.projekti.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.projekti.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -38,7 +39,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         firebaseAuth=FirebaseAuth.getInstance();
         if (firebaseAuth.getCurrentUser()!=null){
             finish();
-            startActivity(new Intent(getApplicationContext(),ProfilActivity.class));
+            startActivity(new Intent(getApplicationContext(), ProfilActivity.class));
         }
 
 
@@ -80,7 +81,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 progressDialog.dismiss();
                 if(task.isSuccessful()){
                         finish();
-                    Intent intent=new Intent(LoginActivity.this,aktivitetetKryesore.class);
+                    Intent intent=new Intent(LoginActivity.this, aktivitetetKryesore.class);
                     startActivity(intent);
 
                 }

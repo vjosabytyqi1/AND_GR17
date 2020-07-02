@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
-    tools:context=".Detajet_frag">
+    tools:context=".Fragments.Detajet_frag">
 
 
     <TextView

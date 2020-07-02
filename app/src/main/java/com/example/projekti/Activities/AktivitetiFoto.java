@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Environment;
 import android.os.Handler;
@@ -13,7 +12,6 @@ import android.provider.MediaStore;
 
 
 import android.os.Bundle;
-import android.text.Layout;
 import android.util.Log;
 import android.view.View;
 import android.webkit.MimeTypeMap;
@@ -21,7 +19,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.Nullable;
@@ -31,8 +28,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
 
-import com.example.projekti.Helpers.Helpers.Upload;
-import com.example.projekti.MainActivity;
+import com.example.projekti.data.Upload;
 import com.example.projekti.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -55,11 +51,10 @@ public class AktivitetiFoto extends AppCompatActivity {
     private static final int CHOOSE_IMAGE = 1;
     public static final int CAMERA_PERM_CODE = 101;
     public static final int CAMERA_REQUEST_CODE = 102;
-    public static final int GALLERY_REQUEST_CODE = 105;
 
     private Button chooseImage, btnUploadImage,dark;
 
-    private TextView viewGallery;
+    private Button viewGallery;
     private ImageView imgPreview;
     private EditText imgDescription;
     private ProgressBar uploadProgress;

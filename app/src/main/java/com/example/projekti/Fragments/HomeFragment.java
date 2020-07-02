@@ -10,8 +10,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.projekti.Adapters.CoffeeAdapter;
-import com.example.projekti.Helpers.CoffeeItem;
+import com.example.projekti.Adapters.UshqimAdapter;
+import com.example.projekti.Helpers.Ushqime;
 import com.example.projekti.R;
 
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
-    private ArrayList<CoffeeItem> coffeeItems = new ArrayList<>();
+    private ArrayList<Ushqime> ushqimes = new ArrayList<>();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -27,18 +27,18 @@ public class HomeFragment extends Fragment {
 
         RecyclerView recyclerView = root.findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setAdapter(new CoffeeAdapter(coffeeItems, getActivity()));
+        recyclerView.setAdapter(new UshqimAdapter(ushqimes, getActivity()));
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        coffeeItems.add(new CoffeeItem(R.drawable.flija, "Fli","0","0"));
-        coffeeItems.add(new CoffeeItem(R.drawable.burek, "Pite","1","0"));
-        coffeeItems.add(new CoffeeItem(R.drawable.baklava, "Bakllava","2","0"));
-        coffeeItems.add(new CoffeeItem(R.drawable.desert, "Tespishte","3","0"));
-        coffeeItems.add(new CoffeeItem(R.drawable.qebapa, "Qebapa","4","0"));
-        coffeeItems.add(new CoffeeItem(R.drawable.leqenik, "Leqenik","5","0"));
-        coffeeItems.add(new CoffeeItem(R.drawable.shampite, "Shampite","6","0"));
-        coffeeItems.add(new CoffeeItem(R.drawable.qaj, "Qaj","7","0"));
-        coffeeItems.add(new CoffeeItem(R.drawable.vere, "Vere","8","0"));
+        ushqimes.add(new Ushqime(R.drawable.flija, "Fli","0","0"));
+        ushqimes.add(new Ushqime(R.drawable.burek, "Pite","1","0"));
+        ushqimes.add(new Ushqime(R.drawable.baklava, "Bakllava","2","0"));
+        ushqimes.add(new Ushqime(R.drawable.desert, "Tespishte","3","0"));
+        ushqimes.add(new Ushqime(R.drawable.qebapa, "Qebapa","4","0"));
+        ushqimes.add(new Ushqime(R.drawable.leqenik, "Leqenik","5","0"));
+        ushqimes.add(new Ushqime(R.drawable.shampite, "Shampite","6","0"));
+        ushqimes.add(new Ushqime(R.drawable.qaj, "Qaj","7","0"));
+        ushqimes.add(new Ushqime(R.drawable.vere, "Vere","8","0"));
 
         return root;
     }

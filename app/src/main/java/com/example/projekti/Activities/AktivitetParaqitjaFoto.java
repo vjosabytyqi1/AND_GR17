@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.example.projekti.Adapters.FotoAdapter;
-import com.example.projekti.Helpers.Helpers.Upload;
+import com.example.projekti.data.Upload;
 import com.example.projekti.R;
 
 import com.google.firebase.database.DataSnapshot;

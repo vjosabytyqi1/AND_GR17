@@ -28,5 +28,9 @@
     <string name="shkruani_passwordin">Shkruani passwordin</string>
     <string name="vendi">Vendi</string>
     <string name="web">Ueb Faqja</string>
+    <string name="vendet_e_ruajtura">Vendet e ruajtura</string>
+    <string name="data_p">Data e planifikimit</string>
+    <string name="save">Ruaj</string>
+    <string name="data_f">Data e perfundimit</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.example.projekti.Helpers.Helpers;
+package com.example.projekti.data;
 
 public class Upload {
     private String imgName;

@@ -5,10 +5,10 @@
     <string name="fotoGaleri">Zgjedheni foto nga galeria</string>
     <string name="kamera">Kamera</string>
     <string name="shto_foto">Shto Foto</string>
-    <string name="enter_image_description_here" >Shkruani vendin e fotos</string>
+    <string name="enter_image_description_here">Shkruani vendin e fotos</string>
     <string name="vendet1_0">Foto nga vende te ndryshme</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
- <string name="visit_kosova">Visit Kosova</string>
+    <string name="visit_kosova">Visit Kosova</string>
     <string name="vendet">Vendet per tu vizituar</string>
     <string name="ushqimet_provu">Ushqime për të provuar</string>
     <string name="kembimi">Këmbimi i valutave</string>
@@ -26,5 +26,9 @@
     <string name="shkruani_passwordin">Shkruani passwordin</string>
     <string name="web">Ueb Faqja</string>
     <string name="vendi">Vendi</string>
+    <string name="vendet_e_ruajtura">Vendet e ruajtura</string>
+    <string name="data_p">Data e planifikimit</string>
+    <string name="data_f">Data e perfundimit</string>
+    <string name="save">Ruaj</string>
 
 </resources>

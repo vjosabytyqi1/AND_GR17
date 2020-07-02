@@ -1,4 +1,4 @@
-package com.example.projekti;
+package com.example.projekti.Activities;
 
 
 import android.os.Bundle;
@@ -16,6 +16,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.projekti.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import org.json.JSONException;

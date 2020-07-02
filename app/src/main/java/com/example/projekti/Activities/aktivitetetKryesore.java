@@ -1,4 +1,4 @@
-package com.example.projekti;
+package com.example.projekti.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,13 +6,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.projekti.Activities.AktivitetiFoto;
-import com.example.projekti.Activities.UshqimetAktivitet;
+import com.example.projekti.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class aktivitetetKryesore extends AppCompatActivity  {
